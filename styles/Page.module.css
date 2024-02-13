@@ -1,0 +1,8 @@
+.page {
+  max-width: 800px;
+  padding: 0 0.5rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
