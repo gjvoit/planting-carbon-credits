@@ -4,7 +4,6 @@
 // 1. sunlight's strength and duration vary throughout the year and with weather
 // 2. plants continue processing CO2 and O2 (in reverse) in low/no-light conditions
 // 3. this does not account for plant age (CO2 respiration rates change as the plant matures)
-// 4.
 // For simplicity, I will just use the ppm value derived after 8 hours of exposure to 700lux in a 1m^3 container as a proxy 🤷
 
 // DEPRECATED, use plantDataGramsCarbonSequestered instead
@@ -65,6 +64,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     h: {
       species: "Aglaonema spp.",
       commonName: "Aglaonema (Chinese Evergreen)",
+      imageUrl: 'https://www.gardendesign.com/pictures/images/900x705Max/site_3/chinese-evergreen-plant-aglaonema-shutterstock-com_15962.jpg',
       ppf: 35.0,
       finalBiomass: 19.0,
       biomassIncrease: 11.1,
@@ -75,6 +75,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     m: {
       species: "Aglaonema spp.",
       commonName: "Aglaonema (Chinese Evergreen)",
+      imageUrl: 'https://www.gardendesign.com/pictures/images/900x705Max/site_3/chinese-evergreen-plant-aglaonema-shutterstock-com_15962.jpg',
       ppf: 28.6,
       finalBiomass: 12.6,
       biomassIncrease: 8.4,
@@ -85,6 +86,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     l: {
       species: "Aglaonema spp.",
       commonName: "Aglaonema (Chinese Evergreen)",
+      imageUrl: 'https://www.gardendesign.com/pictures/images/900x705Max/site_3/chinese-evergreen-plant-aglaonema-shutterstock-com_15962.jpg',
       ppf: 21.1,
       finalBiomass: 5.1,
       biomassIncrease: 4.6,
@@ -97,6 +99,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     h: {
       species: "Chamaedorea elegans",
       commonName: "Parlor Palm",
+      imageUrl: 'http://t1.gstatic.com/images?q=tbn:ANd9GcT5zIycleHgRD8Ssb530faZhRelvB5Z7LbVuSc9UUBLHA6QmF9oHa8639s19a7vo9BqE7uE',
       ppf: 27.7,
       finalBiomass: 9.5,
       biomassIncrease: 5.7,
@@ -107,6 +110,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     m: {
       species: "Chamaedorea elegans",
       commonName: "Parlor Palm",
+      imageUrl: 'http://t1.gstatic.com/images?q=tbn:ANd9GcT5zIycleHgRD8Ssb530faZhRelvB5Z7LbVuSc9UUBLHA6QmF9oHa8639s19a7vo9BqE7uE',
       ppf: 24.4,
       finalBiomass: 6.3,
       biomassIncrease: 3.8,
@@ -117,6 +121,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     l: {
       species: "Chamaedorea elegans",
       commonName: "Parlor Palm",
+      imageUrl: 'http://t1.gstatic.com/images?q=tbn:ANd9GcT5zIycleHgRD8Ssb530faZhRelvB5Z7LbVuSc9UUBLHA6QmF9oHa8639s19a7vo9BqE7uE',
       ppf: 22.7,
       finalBiomass: 4.6,
       biomassIncrease: 2.9,
@@ -129,6 +134,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     h: {
       species: "Ctenanthe oppenheimiana",
       commonName: "Never Never Plant",
+      imageUrl: 'https://strapi.myplantin.com/large_main_3f72340a-cb3a-4883-8744-58c93b65e31a.webp',
       ppf: 33.3,
       finalBiomass: 17.8,
       biomassIncrease: 9.0,
@@ -139,6 +145,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     m: {
       species: "Ctenanthe oppenheimiana",
       commonName: "Never Never Plant",
+      imageUrl: 'https://strapi.myplantin.com/large_main_3f72340a-cb3a-4883-8744-58c93b65e31a.webp',
       ppf: 33.1,
       finalBiomass: 17.6,
       biomassIncrease: 9.2,
@@ -149,6 +156,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     l: {
       species: "Ctenanthe oppenheimiana",
       commonName: "Never Never Plant",
+      imageUrl: 'https://strapi.myplantin.com/large_main_3f72340a-cb3a-4883-8744-58c93b65e31a.webp',
       ppf: 27.3,
       finalBiomass: 11.8,
       biomassIncrease: 6.6,
@@ -161,6 +169,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     h: {
       species: "Dizygotheca elegantissima",
       commonName: "False Aralia",
+      imageUrl: 'https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcS_bKo6Dy0RNzr8iza0AQJl4nMDKpxgi8CL6leLYzDUI5nuN59ktQ3ANhW4GZWXkxXnKU3kwYbM2JP5MwU',
       ppf: 8.9,
       finalBiomass: 4.2,
       biomassIncrease: 8.8,
@@ -171,6 +180,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     m: {
       species: "Dizygotheca elegantissima",
       commonName: "False Aralia",
+      imageUrl: 'https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcS_bKo6Dy0RNzr8iza0AQJl4nMDKpxgi8CL6leLYzDUI5nuN59ktQ3ANhW4GZWXkxXnKU3kwYbM2JP5MwU',
       ppf: 7.5,
       finalBiomass: 2.8,
       biomassIncrease: 6.3,
@@ -181,6 +191,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     l: {
       species: "Dizygotheca elegantissima",
       commonName: "False Aralia",
+      imageUrl: 'https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcS_bKo6Dy0RNzr8iza0AQJl4nMDKpxgi8CL6leLYzDUI5nuN59ktQ3ANhW4GZWXkxXnKU3kwYbM2JP5MwU',
       ppf: 6.0,
       finalBiomass: 1.3,
       biomassIncrease: 3.3,
@@ -193,6 +204,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     h: {
       species: "Dracaena godseffiana",
       commonName: "Gold Dust Dracaena",
+      imageUrl: 'https://strapi.myplantin.com/large_main_fdb2a26e-0bc5-48c5-88a6-4f38faa9a1ec.webp',
       ppf: 11.7,
       finalBiomass: 5.5,
       biomassIncrease: 8.4,
@@ -203,6 +215,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     m: {
       species: "Dracaena godseffiana",
       commonName: "Gold Dust Dracaena",
+      imageUrl: 'https://strapi.myplantin.com/large_main_fdb2a26e-0bc5-48c5-88a6-4f38faa9a1ec.webp',
       ppf: 11.7,
       finalBiomass: 5.5,
       biomassIncrease: 8.6,
@@ -212,7 +225,8 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     },
     l: {
       species: "Dracaena godseffiana",
-      commonName: "Florida Beauty",
+      commonName: "Gold Dust Dracaena",
+      imageUrl: 'https://strapi.myplantin.com/large_main_fdb2a26e-0bc5-48c5-88a6-4f38faa9a1ec.webp',
       ppf: 8.5,
       finalBiomass: 2.3,
       biomassIncrease: 3.8,
@@ -225,6 +239,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     h: {
       species: "Dracaena deremensis 'Lemon Lime'",
       commonName: "Lemon Lime Dracaena",
+      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIu3c6pW9QWwKQ6eGqzlfyUOuHLCem8zex4GX1wVZMlg&s',
       ppf: 13.5,
       finalBiomass: 0.7,
       biomassIncrease: null,
@@ -235,6 +250,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     m: {
       species: "Dracaena deremensis 'Lemon Lime'",
       commonName: "Lemon Lime Dracaena",
+      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIu3c6pW9QWwKQ6eGqzlfyUOuHLCem8zex4GX1wVZMlg&s',
       ppf: 12.2,
       finalBiomass: -0.6,
       biomassIncrease: null,
@@ -245,6 +261,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     l: {
       species: "Dracaena deremensis 'Lemon Lime'",
       commonName: "Lemon Lime Dracaena",
+      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIu3c6pW9QWwKQ6eGqzlfyUOuHLCem8zex4GX1wVZMlg&s',
       ppf: 11.0,
       finalBiomass: -1.7,
       biomassIncrease: null,
@@ -257,6 +274,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     h: {
       species: "Dracaena deremensis 'Janet Craig'",
       commonName: "Janet Craig Dracaena",
+      imageUrl: 'https://assets.wfcdn.com/im/80509897/resize-h445%5Ecompr-r85/1507/150725085/House+Plant+Shop+Live+Dracaena+Plant.jpg',
       ppf: 21.5,
       finalBiomass: -1.7,
       biomassIncrease: null,
@@ -267,6 +285,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     m: {
       species: "Dracaena deremensis 'Janet Craig'",
       commonName: "Janet Craig Dracaena",
+      imageUrl: 'https://assets.wfcdn.com/im/80509897/resize-h445%5Ecompr-r85/1507/150725085/House+Plant+Shop+Live+Dracaena+Plant.jpg',
       ppf: 20.5,
       finalBiomass: -2.7,
       biomassIncrease: null,
@@ -277,6 +296,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     l: {
       species: "Dracaena deremensis 'Janet Craig'",
       commonName: "Janet Craig Dracaena",
+      imageUrl: 'https://assets.wfcdn.com/im/80509897/resize-h445%5Ecompr-r85/1507/150725085/House+Plant+Shop+Live+Dracaena+Plant.jpg',
       ppf: 18.2,
       finalBiomass: -4.9,
       biomassIncrease: null,
@@ -289,6 +309,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     h: {
       species: "Dracaena marginata",
       commonName: "Dragon Tree",
+      imageUrl: 'https://feelgrounded.com/cdn/shop/articles/IMG_4386-1024.jpg?v=1676387449',
       ppf: 30.0,
       finalBiomass: 4.0,
       biomassIncrease: null,
@@ -299,6 +320,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     m: {
       species: "Dracaena marginata",
       commonName: "Dragon Tree",
+      imageUrl: 'https://feelgrounded.com/cdn/shop/articles/IMG_4386-1024.jpg?v=1676387449',
       ppf: 23.4,
       finalBiomass: 0.8,
       biomassIncrease: null,
@@ -309,6 +331,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     l: {
       species: "Dracaena marginata",
       commonName: "Dragon Tree",
+      imageUrl: 'https://feelgrounded.com/cdn/shop/articles/IMG_4386-1024.jpg?v=1676387449',
       ppf: 21.5,
       finalBiomass: 1.0,
       biomassIncrease: null,
@@ -321,6 +344,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     h: {
       species: "Ficus benjamina immature",
       commonName: "Weeping Fig",
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Braided_Benjamina_ficus_FGT.jpg',
       ppf: 5.3,
       finalBiomass: 3.0,
       biomassIncrease: 11.5,
@@ -331,6 +355,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     m: {
       species: "Ficus benjamina immature",
       commonName: "Weeping Fig",
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Braided_Benjamina_ficus_FGT.jpg',
       ppf: 5.3,
       finalBiomass: 3.0,
       biomassIncrease: 11.0,
@@ -341,6 +366,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     l: {
       species: "Ficus benjamina immature",
       commonName: "Weeping Fig",
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Braided_Benjamina_ficus_FGT.jpg',
       ppf: 4.3,
       finalBiomass: 2.0,
       biomassIncrease: 8.6,
@@ -353,6 +379,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     h: {
       species: "Ficus benjamina mature",
       commonName: "Weeping Fig",
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Braided_Benjamina_ficus_FGT.jpg',
       ppf: 11.0,
       finalBiomass: 4.3,
       biomassIncrease: 8.0,
@@ -363,6 +390,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     m: {
       species: "Ficus benjamina mature",
       commonName: "Weeping Fig",
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Braided_Benjamina_ficus_FGT.jpg',
       ppf: 9.7,
       finalBiomass: 3.0,
       biomassIncrease: 6.1,
@@ -373,6 +401,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     l: {
       species: "Ficus benjamina mature",
       commonName: "Weeping Fig",
+      imageUrl: 'https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Braided_Benjamina_ficus_FGT.jpg',
       ppf: 8.3,
       finalBiomass: 1.6,
       biomassIncrease: 3.9,
@@ -385,6 +414,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     h: {
       species: "Ficus repens",
       commonName: "Creeping Fig",
+      imageUrl: 'https://store.ricardosnursery.com/cdn/shop/products/ficus_repens_600x600.jpg?v=1552595328',
       ppf: 4.1,
       finalBiomass: 1.3,
       biomassIncrease: 5.3,
@@ -395,6 +425,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     m: {
       species: "Ficus repens",
       commonName: "Creeping Fig",
+      imageUrl: 'https://store.ricardosnursery.com/cdn/shop/products/ficus_repens_600x600.jpg?v=1552595328',
       ppf: 4.1,
       finalBiomass: 1.3,
       biomassIncrease: 5.2,
@@ -405,6 +436,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     l: {
       species: "Ficus repens",
       commonName: "Creeping Fig",
+      imageUrl: 'https://store.ricardosnursery.com/cdn/shop/products/ficus_repens_600x600.jpg?v=1552595328',
       ppf: 4.1,
       finalBiomass: 1.3,
       biomassIncrease: 4.7,
@@ -417,6 +449,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     h: {
       species: "Spathiphyllum 'Sweet Chico' (10 cm)",
       commonName: "Peace Lily",
+      imageUrl: 'https://assets.wfcdn.com/im/42346104/resize-h445%5Ecompr-r85/2398/239810087/American+Plant+Exchange+Spathiphyllum+Peace+Lily%2C+Live+Flowering+Plant%2C+6-Inch+Pot%2C+Low-Light%2C+Easy+Care%2C+Air-Purifying+Houseplant.jpg',
       ppf: 17.8,
       finalBiomass: 4.9,
       biomassIncrease: 5.3,
@@ -427,6 +460,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     m: {
       species: "Spathiphyllum 'Sweet Chico' (10 cm)",
       commonName: "Peace Lily",
+      imageUrl: 'https://assets.wfcdn.com/im/42346104/resize-h445%5Ecompr-r85/2398/239810087/American+Plant+Exchange+Spathiphyllum+Peace+Lily%2C+Live+Flowering+Plant%2C+6-Inch+Pot%2C+Low-Light%2C+Easy+Care%2C+Air-Purifying+Houseplant.jpg',
       ppf: 14.6,
       finalBiomass: 1.7,
       biomassIncrease: 2.7,
@@ -437,6 +471,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     l: {
       species: "Spathiphyllum 'Sweet Chico' (10 cm)",
       commonName: "Peace Lily",
+      imageUrl: 'https://assets.wfcdn.com/im/42346104/resize-h445%5Ecompr-r85/2398/239810087/American+Plant+Exchange+Spathiphyllum+Peace+Lily%2C+Live+Flowering+Plant%2C+6-Inch+Pot%2C+Low-Light%2C+Easy+Care%2C+Air-Purifying+Houseplant.jpg',
       ppf: 14.4,
       finalBiomass: 1.5,
       biomassIncrease: 2.4,
@@ -449,6 +484,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     h: {
       species: "Spathiphyllum 'Sweet Chico' (15 cm)",
       commonName: "Peace Lily",
+      imageUrl: 'https://assets.wfcdn.com/im/42346104/resize-h445%5Ecompr-r85/2398/239810087/American+Plant+Exchange+Spathiphyllum+Peace+Lily%2C+Live+Flowering+Plant%2C+6-Inch+Pot%2C+Low-Light%2C+Easy+Care%2C+Air-Purifying+Houseplant.jpg',
       ppf: 280.5,
       finalBiomass: 132.5,
       biomassIncrease: 9.0,
@@ -459,6 +495,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     m: {
       species: "Spathiphyllum 'Sweet Chico' (15 cm)",
       commonName: "Peace Lily",
+      imageUrl: 'https://assets.wfcdn.com/im/42346104/resize-h445%5Ecompr-r85/2398/239810087/American+Plant+Exchange+Spathiphyllum+Peace+Lily%2C+Live+Flowering+Plant%2C+6-Inch+Pot%2C+Low-Light%2C+Easy+Care%2C+Air-Purifying+Houseplant.jpg',
       ppf: 272.3,
       finalBiomass: 124.3,
       biomassIncrease: 8.6,
@@ -469,6 +506,7 @@ export const plantDataGramsCarbonSequestered = Object.freeze({
     l: {
       species: "Spathiphyllum 'Sweet Chico' (15 cm)",
       commonName: "Peace Lily",
+      imageUrl: 'https://assets.wfcdn.com/im/42346104/resize-h445%5Ecompr-r85/2398/239810087/American+Plant+Exchange+Spathiphyllum+Peace+Lily%2C+Live+Flowering+Plant%2C+6-Inch+Pot%2C+Low-Light%2C+Easy+Care%2C+Air-Purifying+Houseplant.jpg',
       ppf: 264.2,
       finalBiomass: 116.2,
       biomassIncrease: 8.1,

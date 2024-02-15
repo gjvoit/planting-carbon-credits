@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CaliforniaCarbonPricePerTonne, calculateAnnualCO2e, calculateAnnualEarnings, calculateAnnualKilogramsCarbonSequestered } from '../utils/plants';
+import { plantDataGramsCarbonSequestered } from '../data/plants';
 
 const PlantForm = () => {
   // State variables to store form data
@@ -47,28 +48,31 @@ const PlantForm = () => {
           />
         </label> */}
 
-        <label>
-          Plant Species:
-          <select
-            value={selectedSpecies}
-            onChange={(e) => setSelectedSpecies(e.target.value)}
-          >
-            <option value="">Select a species</option>
-            <option value="aglaonemaSpp">Aglaonema</option>
-            <option value="chamaedoreaElegans">Parlor Palm</option>
-            <option value="ctenantheOppenheimiana">Never Never Plant</option>
-            <option value="dizygothecaElegantissima">False Aralia</option>
-            <option value="dracaenaGodseffiana">Gold Dust Dracaena</option>
-            <option value="dracaenaDeremensisLemonLime">Lemon Lime Dracaena</option>
-            <option value="dracaenaDeremensisJanetCraig">Janet Craig Dracaena</option>
-            <option value="dracaenaMarginata">Dragon Tree</option>
-            <option value="ficusBenjaminaImmature">Weeping Fig (Immature)</option>
-            <option value="ficusBenjaminaMature">Weeping Fig (Mature)</option>
-            <option value="ficusRepens">Creeping Fig</option>
-            <option value="spathiphyllumSweetChico10cm">Peace Lily (Sweet Chico) - Small</option>
-            <option value="spathiphyllumSweetChico15cm">Peace Lily (Sweet Chico) - Medium</option>
-          </select>
-        </label>
+        <div>
+          <label>
+            Plant Species:
+            <select
+              value={selectedSpecies}
+              onChange={(e) => setSelectedSpecies(e.target.value)}
+            >
+              <option value="">Select a species</option>
+              <option value="aglaonemaSpp">Aglaonema</option>
+              <option value="chamaedoreaElegans">Parlor Palm</option>
+              <option value="ctenantheOppenheimiana">Never Never Plant</option>
+              <option value="dizygothecaElegantissima">False Aralia</option>
+              <option value="dracaenaGodseffiana">Gold Dust Dracaena</option>
+              {/* <option value="dracaenaDeremensisLemonLime">Lemon Lime Dracaena</option> */}
+              {/* <option value="dracaenaDeremensisJanetCraig">Janet Craig Dracaena</option> */}
+              <option value="dracaenaMarginata">Dragon Tree</option>
+              <option value="ficusBenjaminaImmature">Weeping Fig (Immature)</option>
+              <option value="ficusBenjaminaMature">Weeping Fig (Mature)</option>
+              <option value="ficusRepens">Creeping Fig</option>
+              {/* <option value="spathiphyllumSweetChico10cm">Peace Lily (Sweet Chico) - Small</option> */}
+              {/* <option value="spathiphyllumSweetChico15cm">Peace Lily (Sweet Chico) - Medium</option> */}
+            </select>
+          </label>
+          {selectedSpecies && <img height={200} src={plantDataGramsCarbonSequestered[selectedSpecies]['h']['imageUrl']} />}
+        </div>
 
         <button type="submit">Submit</button>
       </form>

@@ -12,12 +12,11 @@ export default function YourHealth() {
         <li>The presence of plants positively impacts objective functions, particularly in terms of relaxed physiology and improved cognition</li>
         <li>Real plants may sharpen your attention</li>
         <li>Working with plants can be therapeutic</li>
-        <li>Plants may help you recover from illness faster</li>
-        <li>...</li>
+        <li>Plants may help you recover from illness faster and get sick less often</li>
       </ol>
       <p>
         In addition to your household's health, indoor plants can improve your{" "}
-        <Link href={PlanetHealthPageURL}>Community's Health</Link>
+        <Link href={PlanetHealthPageURL}>Planet's Health</Link>
       </p>
       <Link href="/">Back to home</Link>
     </Page>

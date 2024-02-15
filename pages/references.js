@@ -48,8 +48,6 @@ export default function References() {
         </li>
         <li><a href="https://www.ecomatcher.com/how-to-calculate-co2-sequestration/">How to calculate CO2 sequestration</a></li>
         <li><a href="https://www.saps.org.uk/teaching-resources/resources/157/measuring-the-rate-of-photosynthesis/">Measuring the rate of photosynthesis</a></li>
-        <li><a></a></li>
-        <li><a></a></li>
       </ol>
       <p><Link href="/">Back to home</Link></p>
     </Page>

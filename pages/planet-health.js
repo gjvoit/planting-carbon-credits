@@ -2,7 +2,7 @@ import Link from "next/link";
 import Page from "../components/Page";
 import { WalletHealthPageURL } from "./wallet-health";
 
-export const PlanetHealthPageURL = '/planet-health';
+export const PlanetHealthPageURL = "/planet-health";
 
 export default function YourHealth() {
   return (
@@ -18,13 +18,14 @@ export default function YourHealth() {
       </p>
 
       <p>
-        During photosynthesis, plants take in carbon dioxide through tiny pores
-        called stomata on their leaves. Using the energy from sunlight, plants
-        combine carbon dioxide with water to produce glucose and oxygen. The
-        glucose serves as a source of energy for the plant, while the oxygen is
-        released into the air. This exchange not only supports plant growth but
-        also contributes to the overall reduction of atmospheric carbon levels.
+        A quick biology and chemistry refresher... during photosynthesis, plants
+        take in carbon dioxide through their leaves. Using the energy from
+        sunlight, plants combine carbon dioxide with water to produce glucose
+        and oxygen. The glucose serves as a source of energy for the plant,
+        while the oxygen is released into the air.
       </p>
+
+      <img style={{ alignSelf: 'center' }}src="https://t4.ftcdn.net/jpg/04/00/92/37/360_F_400923707_MsxKo5SCfApYlK8UvzCF06NMlS10CVpP.jpg" />
 
       <p>
         As plants grow and mature, they store carbon in their biomass – stems,
@@ -36,18 +37,26 @@ export default function YourHealth() {
       </p>
 
       <p>
-        Furthermore, healthy and diverse ecosystems, including forests, act as
-        carbon sinks by absorbing more carbon through photosynthesis than they
-        release through processes like respiration and decomposition. Protecting
-        and restoring natural habitats, therefore, is essential for maintaining
-        the Earth's carbon balance and mitigating the impacts of climate change.
+        Overall, plants are not only vital for producing the oxygen we breathe
+        but also for actively participating in the carbon cycle, playing a key
+        role in balancing atmospheric carbon dioxide levels and promoting a
+        healthier planet.
       </p>
 
       <p>
-        Overall, plants are not only vital for producing the oxygen we breathe
-        but also for actively participating in the carbon cycle, playing a key
-        role in reducing atmospheric carbon dioxide levels and promoting a
-        healthier planet.
+        If you're curious to learn more, I highly recommend the{" "}
+        <a href="https://www.khanacademy.org/science/biology/ecology/biogeochemical-cycles/a/the-carbon-cycle">
+          Khan Academy - The Carbon Cycle
+        </a>{" "}
+        as a better refresher on this. I'd also recommend watching/reading the
+        modules on photosynthesis and cellular respiration which are linked out
+        from this module.
+      </p>
+
+      <p>
+        So we know that forests and outdoor plants play a huge role in carbon
+        cycles. But not everyone can go plant a biodiverse forest. Let's talk
+        about how you can get involved.
       </p>
       <Link href={WalletHealthPageURL}>Your Wallet's Health</Link>
       <Link href="/">Back to home</Link>
