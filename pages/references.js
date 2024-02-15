@@ -48,6 +48,12 @@ export default function References() {
         </li>
         <li><a href="https://www.ecomatcher.com/how-to-calculate-co2-sequestration/">How to calculate CO2 sequestration</a></li>
         <li><a href="https://www.saps.org.uk/teaching-resources/resources/157/measuring-the-rate-of-photosynthesis/">Measuring the rate of photosynthesis</a></li>
+        <li>
+            <a href="https://terrariumtribe.com/houseplant-statistics/">Houseplant Statistics & Trends 2024 [+ Original Search Data]</a>
+            <ul>
+                <li>Notes: Interesting nuggets - 66% of American households own at least one houseplant. 33.1 million U.S. households participated in indoor houseplant gardening in 2019.</li>
+            </ul>
+        </li>
       </ol>
       <p><Link href="/">Back to home</Link></p>
     </Page>
