@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+a > span {
+  vertical-align: super;
+}
+
 * {
   box-sizing: border-box;
 }

@@ -2,6 +2,8 @@ import Link from "next/link";
 import Page from "../components/Page";
 import PlantForm from "../components/Calculator";
 
+export const WalletHealthPageURL = '/wallet-health';
+
 export default function YourWalletHealth() {
   return (
     <Page>
@@ -48,8 +50,9 @@ export default function YourWalletHealth() {
         benefit me?"
       </p>
       <p>
-        Remember those CO2(e) calcuations you looked at on the{" "}
-        <Link href="community-health">Community Health Page</Link>?
+        Play around with the Plant Form below to see what credits you might be
+        eligible for, either for maintaining your existing plants or for raising
+        some new little ones in your home!
       </p>
       <PlantForm />
       <Link href="/">Back to home</Link>

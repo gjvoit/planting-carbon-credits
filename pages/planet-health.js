@@ -1,10 +1,13 @@
 import Link from "next/link";
 import Page from "../components/Page";
+import { WalletHealthPageURL } from "./wallet-health";
+
+export const PlanetHealthPageURL = '/planet-health';
 
 export default function YourHealth() {
   return (
     <Page>
-      <h1>Your Community's Health</h1>
+      <h1>Your Planet's Health</h1>
       <p>
         Plants play a crucial role in the carbon cycle, a natural process that
         maintains the balance of carbon in the Earth's atmosphere. Through
@@ -46,6 +49,7 @@ export default function YourHealth() {
         role in reducing atmospheric carbon dioxide levels and promoting a
         healthier planet.
       </p>
+      <Link href={WalletHealthPageURL}>Your Wallet's Health</Link>
       <Link href="/">Back to home</Link>
     </Page>
   );

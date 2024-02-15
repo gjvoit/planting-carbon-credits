@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { calculateAnnualCO2e, calculateAnnualEarnings } from '../utils/plants';
+import { CaliforniaCarbonPricePerTonne, calculateAnnualCO2e, calculateAnnualEarnings, calculateAnnualKilogramsCarbonSequestered } from '../utils/plants';
 
 const PlantForm = () => {
   // State variables to store form data
-  const [height, setHeight] = useState('');
-  const [width, setWidth] = useState('');
+  // const [height, setHeight] = useState('');
+  // const [width, setWidth] = useState('');
   const [selectedSpecies, setSelectedSpecies] = useState('');
   const [CO2e, setCO2e] = useState('');
   const [dollarEstimate, setDollarEstimate] = useState('');
@@ -15,13 +15,13 @@ const PlantForm = () => {
     // TODO - invoke helper functions in utils/plants.js to:
         // 1. calculate CO2e for the inputted plant
         // 2. calculate user earnings for the inputted plant
-    const annualCO2e = calculateAnnualCO2e(height, width, selectedSpecies);
-    setCO2e((annualCO2e.toFixed(2)));
-    setDollarEstimate(calculateAnnualEarnings(annualCO2e));
+    const annualCO2e = calculateAnnualKilogramsCarbonSequestered(selectedSpecies);
+    setCO2e(annualCO2e.toFixed(5));
+    setDollarEstimate(calculateAnnualEarnings(annualCO2e).toFixed(5));
 
     // You can perform actions with the form data here
-    console.log('Height:', height);
-    console.log('Width:', width);
+    // console.log('Height:', height);
+    // console.log('Width:', width);
     console.log('Selected Species:', selectedSpecies);
   };
 
@@ -29,7 +29,7 @@ const PlantForm = () => {
     <div>
       <h2>Plant Carbon Credit Estimator</h2>
       <form onSubmit={handleSubmit} style={formStyle}>
-        <label>
+        {/* <label>
           Plant Height (meters):
           <input
             type="text"
@@ -45,7 +45,7 @@ const PlantForm = () => {
             value={width}
             onChange={(e) => setWidth(e.target.value)}
           />
-        </label>
+        </label> */}
 
         <label>
           Plant Species:
@@ -54,11 +54,19 @@ const PlantForm = () => {
             onChange={(e) => setSelectedSpecies(e.target.value)}
           >
             <option value="">Select a species</option>
-            <option value="areca">Areca Palm</option>
-            <option value="bostonFern">Boston Fern</option>
-            <option value="rubberTree">Rubber Tree</option>
-            <option value="spiderPlant">Spider Plant</option>
-            <option value="ficusTree">Ficus Tree</option>
+            <option value="aglaonemaSpp">Aglaonema</option>
+            <option value="chamaedoreaElegans">Parlor Palm</option>
+            <option value="ctenantheOppenheimiana">Never Never Plant</option>
+            <option value="dizygothecaElegantissima">False Aralia</option>
+            <option value="dracaenaGodseffiana">Gold Dust Dracaena</option>
+            <option value="dracaenaDeremensisLemonLime">Lemon Lime Dracaena</option>
+            <option value="dracaenaDeremensisJanetCraig">Janet Craig Dracaena</option>
+            <option value="dracaenaMarginata">Dragon Tree</option>
+            <option value="ficusBenjaminaImmature">Weeping Fig (Immature)</option>
+            <option value="ficusBenjaminaMature">Weeping Fig (Mature)</option>
+            <option value="ficusRepens">Creeping Fig</option>
+            <option value="spathiphyllumSweetChico10cm">Peace Lily (Sweet Chico) - Small</option>
+            <option value="spathiphyllumSweetChico15cm">Peace Lily (Sweet Chico) - Medium</option>
           </select>
         </label>
 
@@ -66,7 +74,9 @@ const PlantForm = () => {
       </form>
       {CO2e && dollarEstimate && (
         <div>
-            <p>Your plant could offset up to {CO2e}kg of CO2e per year. <br /> That could earn you up to ${dollarEstimate} per year!</p>
+            <p>Your plant could offset up to {CO2e}kg of CO2e per year.</p>
+            <p>Carbon Credit markets typically price units in tonnes per year </p>
+            <p>With California's Carbon Credit rate at ${CaliforniaCarbonPricePerTonne} per tonne, that could earn you up to ${dollarEstimate} per year!</p>
         </div>
       )}
     </div>

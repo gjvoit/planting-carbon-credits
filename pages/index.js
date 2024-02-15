@@ -1,6 +1,10 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import { PlanetHealthPageURL } from './planet-health';
+import { WalletHealthPageURL } from './wallet-health';
+import { YourHealthPageURL } from './your-health';
+import { ReferencesPageURL } from './references';
 
 export default function Home() {
   return (
@@ -22,28 +26,37 @@ export default function Home() {
         <img width='100%' src="https://png.pngtree.com/thumb_back/fh260/background/20230521/pngtree-group-of-potted-plants-in-a-window-sill-image_2670578.jpg"></img>
 
         <div className={styles.grid}>
-          <Link href="/your-health" className={styles.card}>
+          <Link href={YourHealthPageURL} className={styles.card}>
             <h3>Your Health &rarr;</h3>
             <p>Learn about the benefits of plants for your health.</p>
           </Link>
 
           <Link
-            href="/community-health"
+            href={PlanetHealthPageURL}
             className={styles.card}
           >
-            <h3>Your Community's Health &rarr;</h3>
-            <p>Learn about how tending plants can improve your community's health.</p>
+            <h3>Your Planet's Health &rarr;</h3>
+            <p>Learn about how tending plants can improve your community's and the planet's health.</p>
           </Link>
 
-          <a
-            href="wallet-health"
+          <Link
+            href={WalletHealthPageURL}
             className={styles.card}
           >
             <h3>Your Wallet's Health &rarr;</h3>
             <p>
               Round it out by learning how tending plants has a financial upside as well!
             </p>
-          </a>
+          </Link>
+          <Link
+            href={ReferencesPageURL}
+            className={styles.card}
+          >
+            <h3>References &rarr;</h3>
+            <p>
+              Curious to dig in more? Check out the references!
+            </p>
+          </Link>
         </div>
       </main>
 
